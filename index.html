@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,32 +10,30 @@
 </head>
 
 <body>
-    <header>
-        <h1>Formulario</h1>
     </header>
     <Main>
-        <div class="card">
-            <form action="/cadastro" method="post">
+        <form action="/cadastro" method="post" class="formulario">
+            <div class="formulario__titulo">
                 <h1>Contato:</h1>
-                <div>
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Informe seu nome completo">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Informe seu email">
-                </div>
-                <div>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Informe seu numero">
-                </div>
-                <label for="mensagem">Deixe sua mensagem:</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                <div>
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </div>
-        </div>
+            </div>
+            <div class="formulario__campos">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome completo">
+            </div>
+            <div class="formulario__campos">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Informe seu email">
+            </div>
+            <div class="formulario__campos">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Informe seu numero">
+            </div class="formulario__campos">
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <div class="formulario__botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </Main>
 </body>
